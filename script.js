@@ -10,7 +10,7 @@
   for (row = 0; 0 <= gridYSize ? row < gridYSize : row > gridYSize; 0 <= gridYSize ? row++ : row--) {
     grid[row] = [];
     for (col = 0; 0 <= gridXSize ? col < gridXSize : col > gridXSize; 0 <= gridXSize ? col++ : col--) {
-      if (Math.round(Math.random()) === 0) {
+      if (Math.round(Math.random() * 2) === 0) {
         grid[row][col] = true;
       } else {
         grid[row][col] = false;

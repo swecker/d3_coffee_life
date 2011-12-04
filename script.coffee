@@ -5,7 +5,7 @@ grid = []
 for row in [0...gridYSize]
 	grid[row] = []
 	for col in [0...gridXSize]
-		if Math.round(Math.random()) is 0
+		if Math.round(Math.random()*2) is 0
 			grid[row][col] = true
 		else
 			grid[row][col] = false
